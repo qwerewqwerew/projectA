@@ -387,7 +387,7 @@ class ScrollAnimation {
       },
       {
         threshold: 0.1,
-      }
+      },
     );
 
     // 애니메이션 적용할 요소들
@@ -503,3 +503,9 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+/* ---------팝업--------- */
+const btn = document.querySelector(".popup button");
+btn.onclick = () => {
+  document.querySelector(".popup").style.display = "none";
+};

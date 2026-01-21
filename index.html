@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오뚜기 - 세상과 함께하는 식품회사</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="popup">
+     이 프로젝트는 구직용 포트폴리오 입니다.
+     오뚜기와 무관함을 알려드립니다.
+     <button>닫기</button>
+    </div>
     <!-- Header -->
     <header class="Header" role="banner">
         <div class="Header-content">
@@ -14,7 +21,6 @@
             <div class="Logo">
                 <img src="https://www.figma.com/api/mcp/asset/87f64093-63b8-402a-8f68-ec65ddca1966" alt="오뚜기 로고">
             </div>
-
             <!-- Nav bar -->
             <nav class="Nav-bar" role="navigation" aria-label="주메뉴">
                 <a href="#" class="Nav-item">회사소개</a>
@@ -29,7 +35,6 @@
                     <span></span>
                 </button>
             </nav>
-
             <!-- Utility area -->
             <div class="Utility-area">
                 <button class="Search-btn" aria-label="검색">
@@ -41,10 +46,10 @@
                 <a href="#" class="Onlinemall">
                     <img src="https://www.figma.com/api/mcp/asset/1d80c8ea-1f7a-4b32-b402-b1858f882b75" alt="">
                     <span>오뚜기몰</span>
-                    <img class="Onlinemall-arrow" src="https://www.figma.com/api/mcp/asset/bc8d30c0-ef62-42bb-8a88-d97a76ac3303" alt="">
+                    <img class="Onlinemall-arrow"
+                        src="https://www.figma.com/api/mcp/asset/bc8d30c0-ef62-42bb-8a88-d97a76ac3303" alt="">
                 </a>
             </div>
-
             <!-- Language -->
             <div class="Language">
                 <span>KR</span>
@@ -54,7 +59,6 @@
             </div>
         </div>
     </header>
-
     <!-- Main -->
     <main class="Main" role="main">
         <!-- Video Section -->
@@ -63,24 +67,22 @@
                 <div class="Video-link">
                     <div class="Video-mask">
                         <video autoplay muted loop playsinline>
-                            <source src="https://www.figma.com/api/mcp/asset/f4eb1514-9ee0-4cd9-8745-807595a18f4c" type="video/mp4">
+                            <source src="https://www.figma.com/api/mcp/asset/f4eb1514-9ee0-4cd9-8745-807595a18f4c"
+                                type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="Video-gradient"></div>
             </div>
-
             <!-- Video Playback -->
             <div class="Video-playback">
                 <div class="Progress-bar">
                     <div class="Progress-background"></div>
                 </div>
-
                 <div class="Slide-indicator">
                     <span class="Current-slide">01</span>
                     <span class="Total-slide">07</span>
                 </div>
-
                 <button class="Video-btn Video-btn--pause" aria-label="일시정지">
                     <img src="https://www.figma.com/api/mcp/asset/46e6b7b9-df47-465f-a1dc-5813a8e28f6b" alt="">
                 </button>
@@ -93,261 +95,248 @@
             </div>
         </section>
     </main>
-
     <!-- Footer -->
     <footer class="Footer" role="contentinfo">
         <div class="Footer-content">
             <p>&copy; 2024 OTTOGI. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
-                    <span class="current">01</span>
-                    <span class="total">07</span>
+    <span class="current">01</span>
+    <span class="total">07</span>
+    </div>
+    <button class="btn-pause"></button>
+    <button class="btn-prev"></button>
+    <button class="btn-next"></button>
+    </div>
+    </section>
+    <!-- 스크롤 UI -->
+    <div class="scroll-ui">
+        <div class="scroll-icon"></div>
+        <div class="scroll-arrow"></div>
+    </div>
+    <!-- 컨텐츠 섹션 1 -->
+    <section class="content-section">
+        <h2 class="main-heading">메인 헤딩</h2>
+        <div class="content-wrap">
+            <div class="content-left">
+                <div class="image-box">
+                    <img src="#" alt="제품 이미지">
                 </div>
-                <button class="btn-pause"></button>
-                <button class="btn-prev"></button>
-                <button class="btn-next"></button>
+                <div class="lottie-animation"></div>
             </div>
-        </section>
-
-        <!-- 스크롤 UI -->
-        <div class="scroll-ui">
-            <div class="scroll-icon"></div>
-            <div class="scroll-arrow"></div>
-        </div>
-
-        <!-- 컨텐츠 섹션 1 -->
-        <section class="content-section">
-            <h2 class="main-heading">메인 헤딩</h2>
-            <div class="content-wrap">
-                <div class="content-left">
-                    <div class="image-box">
-                        <img src="#" alt="제품 이미지">
-                    </div>
-                    <div class="lottie-animation"></div>
-                </div>
-                <div class="content-right">
-                    <h3 class="title">타이틀 1</h3>
-                    <p class="text">텍스트 내용이 들어갑니다</p>
-                    <a href="#" class="btn-more">더보기</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 컨텐츠 섹션 2 -->
-        <section class="content-section reverse">
-            <div class="content-wrap">
-                <div class="content-left">
-                    <h3 class="title">타이틀 2</h3>
-                    <p class="text">텍스트 내용이 들어갑니다</p>
-                    <a href="#" class="btn-more">더보기</a>
-                </div>
-                <div class="content-right">
-                    <div class="image-box">
-                        <img src="#" alt="제품 이미지">
-                    </div>
-                    <div class="lottie-animation"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 컨텐츠 섹션 3 -->
-        <section class="content-section">
-            <div class="content-wrap">
-                <div class="content-left">
-                    <div class="image-box">
-                        <img src="#" alt="제품 이미지">
-                    </div>
-                    <div class="lottie-animation"></div>
-                </div>
-                <div class="content-right">
-                    <h3 class="title">타이틀 3</h3>
-                    <p class="text">텍스트 내용이 들어갑니다</p>
-                    <a href="#" class="btn-more">더보기</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 글로벌 제품 섹션 -->
-        <section class="global-section">
-            <div class="global-content">
-                <h4 class="heading">글로벌 상품</h4>
-                <h2 class="title">세계가 사랑하는 오뚜기</h2>
-                <p class="text">전 세계로 뻗어나가는 오뚜기의 제품들</p>
+            <div class="content-right">
+                <h3 class="title">타이틀 1</h3>
+                <p class="text">텍스트 내용이 들어갑니다</p>
                 <a href="#" class="btn-more">더보기</a>
-                <div class="image-grid">
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 컨텐츠 섹션 2 -->
+    <section class="content-section reverse">
+        <div class="content-wrap">
+            <div class="content-left">
+                <h3 class="title">타이틀 2</h3>
+                <p class="text">텍스트 내용이 들어갑니다</p>
+                <a href="#" class="btn-more">더보기</a>
+            </div>
+            <div class="content-right">
+                <div class="image-box">
+                    <img src="#" alt="제품 이미지">
                 </div>
+                <div class="lottie-animation"></div>
             </div>
-            <div class="bg-graphic"></div>
-        </section>
-
-        <!-- 카드 섹션 -->
-        <section class="card-section">
-            <div class="card large"></div>
-            <div class="card medium"></div>
-            <div class="card medium"></div>
-        </section>
-
-        <!-- 배너 섹션 -->
-        <section class="banner-section">
-            <h2 class="heading">오뚜기의 다양한 브랜드</h2>
-            <div class="banner-slider">
-                <div class="banner-slide">
-                    <img src="#" alt="제품">
-                    <div class="banner-info">
-                        <div class="category">탕국찌개</div>
-                        <h3 class="title">타이틀</h3>
-                        <a href="#" class="link">오뚜기몰에서 상품보기</a>
-                    </div>
+        </div>
+    </section>
+    <!-- 컨텐츠 섹션 3 -->
+    <section class="content-section">
+        <div class="content-wrap">
+            <div class="content-left">
+                <div class="image-box">
+                    <img src="#" alt="제품 이미지">
                 </div>
+                <div class="lottie-animation"></div>
             </div>
-            <div class="banner-controls">
-                <button class="btn-prev"></button>
-                <span class="indicator">03 / 06</span>
-                <button class="btn-next"></button>
-                <button class="btn-pause"></button>
+            <div class="content-right">
+                <h3 class="title">타이틀 3</h3>
+                <p class="text">텍스트 내용이 들어갑니다</p>
+                <a href="#" class="btn-more">더보기</a>
             </div>
-        </section>
-
-        <!-- 뉴스룸 섹션 -->
-        <section class="news-section">
-            <h2 class="heading">세상과 함께하는 이야기를 나누고자 합니다</h2>
-            <h3 class="subheading">오뚜기 뉴스룸</h3>
+        </div>
+    </section>
+    <!-- 글로벌 제품 섹션 -->
+    <section class="global-section">
+        <div class="global-content">
+            <h4 class="heading">글로벌 상품</h4>
+            <h2 class="title">세계가 사랑하는 오뚜기</h2>
+            <p class="text">전 세계로 뻗어나가는 오뚜기의 제품들</p>
             <a href="#" class="btn-more">더보기</a>
-            <div class="news-grid">
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">식품안전과학연구소, 안전 관리 우수연구실 인증 획득</p>
-                </article>
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">사계절 즐기는 새로운 디저트 간식</p>
-                </article>
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">진짬뽕 출시 10주년 기념 리뉴얼</p>
-                </article>
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">한국식품연구원, 미래 식품 산업 선도</p>
-                </article>
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">타바스코 브랜드, 성수동 로컬 레스토랑 협업</p>
-                </article>
-                <article class="news-card">
-                    <img src="#" alt="뉴스">
-                    <div class="gradient"></div>
-                    <p class="news-title">라이트앤조이 겨울 시즌 콘셉트 2차 TV CF 공개</p>
-                </article>
+            <div class="image-grid">
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
             </div>
-        </section>
-
-        <!-- 레시피 섹션 -->
-        <section class="recipe-section">
-            <h3 class="heading">오뚜기 레시피</h3>
-            <p class="text">오뚜기 제품으로 만드는 맛있는 요리</p>
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <img src="#" alt="레시피">
-                    <h4 class="title">꽈배기 도넛</h4>
-                    <a href="#" class="link">레시피 보기</a>
-                </div>
-                <div class="recipe-card">
-                    <img src="#" alt="레시피">
-                    <h4 class="title">순대 & 부추겉절이</h4>
-                    <a href="#" class="link">레시피 보기</a>
-                </div>
-                <div class="recipe-card">
-                    <img src="#" alt="레시피">
-                    <h4 class="title">단호박 뇨끼</h4>
-                    <a href="#" class="link">레시피 보기</a>
-                </div>
-                <div class="recipe-card">
-                    <img src="#" alt="레시피">
-                    <h4 class="title">오이토마토 무침</h4>
-                    <a href="#" class="link">레시피 보기</a>
+        </div>
+        <div class="bg-graphic"></div>
+    </section>
+    <!-- 카드 섹션 -->
+    <section class="card-section">
+        <div class="card large"></div>
+        <div class="card medium"></div>
+        <div class="card medium"></div>
+    </section>
+    <!-- 배너 섹션 -->
+    <section class="banner-section">
+        <h2 class="heading">오뚜기의 다양한 브랜드</h2>
+        <div class="banner-slider">
+            <div class="banner-slide">
+                <img src="#" alt="제품">
+                <div class="banner-info">
+                    <div class="category">탕국찌개</div>
+                    <h3 class="title">타이틀</h3>
+                    <a href="#" class="link">오뚜기몰에서 상품보기</a>
                 </div>
             </div>
-        </section>
-
-        <!-- SNS 섹션 -->
-        <section class="sns-section">
-            <h3 class="heading">소셜 미디어</h3>
-            <div class="sns-tabs">
-                <button class="tab active">데일리</button>
-                <button class="tab">플레이트</button>
+        </div>
+        <div class="banner-controls">
+            <button class="btn-prev"></button>
+            <span class="indicator">03 / 06</span>
+            <button class="btn-next"></button>
+            <button class="btn-pause"></button>
+        </div>
+    </section>
+    <!-- 뉴스룸 섹션 -->
+    <section class="news-section">
+        <h2 class="heading">세상과 함께하는 이야기를 나누고자 합니다</h2>
+        <h3 class="subheading">오뚜기 뉴스룸</h3>
+        <a href="#" class="btn-more">더보기</a>
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">식품안전과학연구소, 안전 관리 우수연구실 인증 획득</p>
+            </article>
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">사계절 즐기는 새로운 디저트 간식</p>
+            </article>
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">진짬뽕 출시 10주년 기념 리뉴얼</p>
+            </article>
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">한국식품연구원, 미래 식품 산업 선도</p>
+            </article>
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">타바스코 브랜드, 성수동 로컬 레스토랑 협업</p>
+            </article>
+            <article class="news-card">
+                <img src="#" alt="뉴스">
+                <div class="gradient"></div>
+                <p class="news-title">라이트앤조이 겨울 시즌 콘셉트 2차 TV CF 공개</p>
+            </article>
+        </div>
+    </section>
+    <!-- 레시피 섹션 -->
+    <section class="recipe-section">
+        <h3 class="heading">오뚜기 레시피</h3>
+        <p class="text">오뚜기 제품으로 만드는 맛있는 요리</p>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="#" alt="레시피">
+                <h4 class="title">꽈배기 도넛</h4>
+                <a href="#" class="link">레시피 보기</a>
             </div>
-            <a href="#" class="btn-more">더보기</a>
-            <div class="sns-grid">
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">전자레인지 4분, 치킨집 퀄리티 완성!</p>
-                </div>
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">전자레인지 3분이면 뚝딱 완성</p>
-                </div>
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">국내에서 직접 갈아 만든 고품질 땅콩버터</p>
-                </div>
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">슴슴한 매력에 한 번 빠지면 자꾸 생각나는 평양냉면!</p>
-                </div>
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">자취러들의 든든한 한 끼</p>
-                </div>
-                <div class="sns-card">
-                    <div class="sns-header">
-                        <span class="icon"></span>
-                        <span class="account">ottogi_kr</span>
-                    </div>
-                    <img src="#" alt="SNS">
-                    <p class="caption">바쁜 하루 전자레인지 1분으로 가볍고 맛있게</p>
-                </div>
+            <div class="recipe-card">
+                <img src="#" alt="레시피">
+                <h4 class="title">순대 & 부추겉절이</h4>
+                <a href="#" class="link">레시피 보기</a>
             </div>
-        </section>
+            <div class="recipe-card">
+                <img src="#" alt="레시피">
+                <h4 class="title">단호박 뇨끼</h4>
+                <a href="#" class="link">레시피 보기</a>
+            </div>
+            <div class="recipe-card">
+                <img src="#" alt="레시피">
+                <h4 class="title">오이토마토 무침</h4>
+                <a href="#" class="link">레시피 보기</a>
+            </div>
+        </div>
+    </section>
+    <!-- SNS 섹션 -->
+    <section class="sns-section">
+        <h3 class="heading">소셜 미디어</h3>
+        <div class="sns-tabs">
+            <button class="tab active">데일리</button>
+            <button class="tab">플레이트</button>
+        </div>
+        <a href="#" class="btn-more">더보기</a>
+        <div class="sns-grid">
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">전자레인지 4분, 치킨집 퀄리티 완성!</p>
+            </div>
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">전자레인지 3분이면 뚝딱 완성</p>
+            </div>
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">국내에서 직접 갈아 만든 고품질 땅콩버터</p>
+            </div>
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">슴슴한 매력에 한 번 빠지면 자꾸 생각나는 평양냉면!</p>
+            </div>
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">자취러들의 든든한 한 끼</p>
+            </div>
+            <div class="sns-card">
+                <div class="sns-header">
+                    <span class="icon"></span>
+                    <span class="account">ottogi_kr</span>
+                </div>
+                <img src="#" alt="SNS">
+                <p class="caption">바쁜 하루 전자레인지 1분으로 가볍고 맛있게</p>
+            </div>
+        </div>
+    </section>
     </main>
-
     <!-- 푸터 -->
     <footer class="footer">
         <div class="footer-content">
@@ -407,7 +396,7 @@
             <p class="copyright">© 2024 OTTOGI CORPORATION. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
+
 </html>
